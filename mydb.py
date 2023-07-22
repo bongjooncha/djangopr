@@ -1,13 +1,13 @@
-import mysql.connector
+# import mysql.connector
 
-dataBase = mysql.connector.connect(
-    host='localhost',
-    user = 'root',
-    passwd = '12345678'
-)
+# dataBase = mysql.connector.connect(
+#     host='localhost',
+#     user = 'root',
+#     passwd = '12345678'
+# )
 
-cursorObject = dataBase.cursor()
+# cursorObject = dataBase.cursor()
 
-cursorObject.execute("CREATE DATABASE `smart farm db`")
+# cursorObject.execute("CREATE DATABASE `smart farm db`")
 
-print("All Done!")
+# print("All Done!")
