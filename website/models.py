@@ -9,7 +9,7 @@ class Record(models.Model):
     email = models.CharField(max_length = 50)
     city = models.CharField(max_length = 20)
     phone = models.CharField(max_length = 20)
-    state = models.CharField(max_length = 20)
+    sex = models.CharField(max_length=10)
 
     def __str__(self):
         return(f"{self.first_name} {self.last_name}")
