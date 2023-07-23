@@ -5,6 +5,9 @@ from django.contrib import messages
 # Create your views here.
 
 def home(request):
+    return render(request, 'home.html',{})
+
+def login_user(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
@@ -16,11 +19,7 @@ def home(request):
             return redirect('home')
         else:
             messages.success(request, "아이디 혹은 비밀번호가 틀렸습니다.")
-
-    return render(request, 'home.html',{})
-
-def login_user(request):
-    pass
+    return render(request, 'login.html',{})
 
 def logout_user(request):
     logout(request)
